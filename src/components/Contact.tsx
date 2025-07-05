@@ -6,23 +6,23 @@ import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Linkedin } from "lucide-react";
 
 export default function Contact() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     emailjs
-      .sendForm("service_gos3vmf", "template_z3ucczp", form.current, "_56amATcv9mxWgeEI")
+      .sendForm("service_gos3vmf", "template_z3ucczp", form.current as HTMLFormElement, "_56amATcv9mxWgeEI")
       .then(() => {
         emailjs
-          .sendForm("service_gos3vmf", "template_hjwesar", form.current, "_56amATcv9mxWgeEI")
+          .sendForm("service_gos3vmf", "template_hjwesar", form.current as HTMLFormElement, "_56amATcv9mxWgeEI")
           .then(() => {
             setLoading(false);
             setDone(true);
-            form.current.reset();
+            (form.current as HTMLFormElement).reset();
           })
           .catch(() => setLoading(false));
       })
