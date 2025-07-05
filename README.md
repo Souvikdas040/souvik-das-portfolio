@@ -16,7 +16,7 @@ This is a sleek, responsive, and modern **Projects Showcase Section** built with
 
 ![Projects Section Preview](./public/preview.png)
 
-> Add a screenshot of your section in the `/public` folder and name it `preview.png`
+> Preview of my portfolio
 
 ---
 
@@ -28,7 +28,7 @@ This is a sleek, responsive, and modern **Projects Showcase Section** built with
 A full-featured food delivery web app with user authentication, cart, checkout, admin panel, and payments.
 
 - 🔧 **Tech:** React, Redux, Node.js, Express.js, MongoDB, JWT, Stripe, TailwindCSS
-- 🔗 [GitHub](https://github.com/Souvikdas040/food-delivery-app) | [Live Demo](https://fooddelivery-app-frontend-ql8o.onrender.com)
+- 🔗 [GitHub](https://github.com/Souvikdas040/foodDelivery-app) | [Live Demo](https://fooddelivery-app-frontend-ql8o.onrender.com)
 
 ---
 
