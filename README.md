@@ -28,7 +28,7 @@ This is a sleek, responsive, and modern **Projects Showcase Section** built with
 A full-featured food delivery web app with user authentication, cart, checkout, admin panel, and payments.
 
 - 🔧 **Tech:** React, Redux, Node.js, Express.js, MongoDB, JWT, Stripe, TailwindCSS
-- 🔗 [GitHub](https://github.com/Souvikdas040/food-delivery-app) | [Live Demo](https://food-delivery-app-url)
+- 🔗 [GitHub](https://github.com/Souvikdas040/food-delivery-app) | [Live Demo](https://fooddelivery-app-frontend-ql8o.onrender.com)
 
 ---
 
@@ -38,7 +38,7 @@ A full-featured food delivery web app with user authentication, cart, checkout, 
 A fun interactive app that fetches random cat facts, jokes, and advice from public APIs on refresh.
 
 - 🔧 **Tech:** Vite, React, TailwindCSS, CatFact API, Official Joke API, Advice Slip API, Useless Facts API
-- 🔗 [GitHub](https://github.com/Souvikdas040/fun-fact-generator) | [Live Demo](https://fun-fact-generator-url)
+- 🔗 [GitHub](https://github.com/Souvikdas040/fun-fact-generator) | [Live Demo](https://fun-fact-generator-aa63.onrender.com)
 
 ---
 
@@ -48,7 +48,7 @@ A fun interactive app that fetches random cat facts, jokes, and advice from publ
 A beautiful weather app that displays current weather, 7-day forecast, and supports dark mode.
 
 - 🔧 **Tech:** React, TypeScript, TailwindCSS, Lucide Icons, Framer Motion, OpenWeather API, date-fns
-- 🔗 [GitHub](https://github.com/Souvikdas040/weather-app) | [Live Demo](https://weather-app-url)
+- 🔗 [GitHub](https://github.com/Souvikdas040/weather-app) | [Live Demo](https://weather-app-84mz.onrender.com)
 
 ---
 
