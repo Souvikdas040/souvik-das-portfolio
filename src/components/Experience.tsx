@@ -11,9 +11,10 @@ export default function Experience() {
     },
     {
       title: "Full Stack Development Intern",
-      company: "Main Flow Services and Technologies Pvt. Ltd. | Sep 2024 – Nov 2024",
+      company:
+        "Main Flow Services and Technologies Pvt. Ltd. | Sep 2024 – Nov 2024",
       description:
-        "Developed scalable backend services and REST APIs with Node.js & Express.js.. Optimized database interactions with MongoDB and improved performance metrics. Collaborated in team sprints, implementing unit tests and agile workflows.",
+        "Developed scalable backend services and REST APIs with Node.js & Express.js. Optimized database interactions with MongoDB and improved performance metrics. Collaborated in team sprints, implementing unit tests and agile workflows.",
     },
     {
       title: "Web Developer Intern",
@@ -38,7 +39,8 @@ export default function Experience() {
     },
     {
       degree: "Secondary Education",
-      institution: "St. Vincent's High and Technical School | May 2008 – Mar 2019",
+      institution:
+        "St. Vincent's High and Technical School | May 2008 – Mar 2019",
       details:
         "Subjects: Computer Science, Mathematics, Science. Sparked early interest in technology and coding through hands-on learning.",
     },
@@ -53,85 +55,71 @@ export default function Experience() {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      {/* Grid Background */}
-      <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
-        <svg
-          className="w-full h-full opacity-10 text-gray-300"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice"
-          fill="none"
-          viewBox="0 0 100 100"
-        >
-          <defs>
-            <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-              <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" strokeWidth="0.5" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
-      </div>
-
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-16">
           My <span className="text-blue-600">Journey</span>
         </h1>
 
         {/* Internships Section */}
-        {internships.length > 0 && (
-          <div className="mb-20">
-            <h2 className="text-3xl font-semibold mb-10 flex items-center gap-2 text-blue-600">
-              <Briefcase className="w-6 h-6" />
-              Internships
-            </h2>
-            <div className="relative border-l-2 border-blue-500 pl-6 space-y-12">
-              {internships.map((item, index) => (
-                <motion.div
-                  key={index}
-                  className="flex items-start gap-4 group"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="w-4 h-4 bg-blue-500 rounded-full mt-1.5 group-hover:scale-110 transition-transform duration-300" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm italic text-gray-500">{item.company}</p>
-                    <p className="mt-2 text-gray-700 leading-relaxed">{item.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+        <div className="mb-20">
+          <h2 className="text-3xl font-semibold mb-10 flex items-center gap-2 text-blue-600">
+            <Briefcase className="w-6 h-6" />
+            Internships
+          </h2>
+
+          <div className="relative border-l-2 border-blue-500 pl-6 space-y-12">
+            {internships.map((item, index) => (
+              <motion.div
+                key={index}
+                className="flex items-start gap-4 group"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                viewport={{ once: true }}
+              >
+                <div className="w-4 h-4 bg-blue-500 rounded-full mt-1.5 group-hover:scale-110 transition-transform duration-300" />
+                <div>
+                  <h3 className="text-xl font-semibold group-hover:text-blue-600 transition-colors duration-200">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm italic text-gray-500">{item.company}</p>
+                  <p className="mt-2 text-gray-700 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
-        )}
+        </div>
 
         {/* Education Section */}
-        {education.length > 0 && (
-          <div>
-            <h2 className="text-3xl font-semibold mb-10 flex items-center gap-2 text-blue-600">
-              <GraduationCap className="w-6 h-6" />
-              Education
-            </h2>
-            <div className="grid gap-8 md:grid-cols-2">
-              {education.map((edu, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <h3 className="text-xl font-bold text-gray-800">{edu.degree}</h3>
-                  <p className="text-sm italic text-gray-500 mt-1">{edu.institution}</p>
-                  <p className="mt-3 text-gray-700 leading-relaxed">{edu.details}</p>
-                </motion.div>
-              ))}
-            </div>
+        <div>
+          <h2 className="text-3xl font-semibold mb-10 flex items-center gap-2 text-blue-600">
+            <GraduationCap className="w-6 h-6" />
+            Education
+          </h2>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            {education.map((edu, index) => (
+              <motion.div
+                key={index}
+                className="bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl font-bold">{edu.degree}</h3>
+                <p className="text-sm italic text-gray-500 mt-1">
+                  {edu.institution}
+                </p>
+                <p className="mt-3 text-gray-700 leading-relaxed">
+                  {edu.details}
+                </p>
+              </motion.div>
+            ))}
           </div>
-        )}
+        </div>
       </div>
     </motion.section>
   );
