@@ -1,54 +1,110 @@
-# React + TypeScript + Vite
+# 💼 Developer Portfolio Projects Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a sleek, responsive, and modern **Projects Showcase Section** built with **React** and **TailwindCSS**. It highlights multiple full-stack and frontend projects with live demo links, GitHub repos, tech stack badges, and beautiful hover effects.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Live Demo
 
-## Expanding the ESLint configuration
+🔗 [View Live Portfolio](https://souvik-das-portfolio.onrender.com)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> Deployed using ```Render```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 📸 Screenshot
+
+![Projects Section Preview](./public/preview.png)
+
+> Preview of my portfolio
+
+---
+
+## 🛠️ Projects Featured
+
+### 📦 1. Food Delivery App
+> **Stack:** MERN (MongoDB, Express, React, Node.js)
+
+A full-featured food delivery web app with user authentication, cart, checkout, admin panel, and payments.
+
+- 🔧 **Tech:** React, Redux, Node.js, Express.js, MongoDB, JWT, Stripe, TailwindCSS
+- 🔗 [GitHub](https://github.com/Souvikdas040/foodDelivery-app) | [Live Demo](https://fooddelivery-app-frontend-ql8o.onrender.com)
+
+---
+
+### 😂 2. Fun Fact Generator
+> **Stack:** React + APIs
+
+A fun interactive app that fetches random cat facts, jokes, and advice from public APIs on refresh.
+
+- 🔧 **Tech:** Vite, React, TailwindCSS, CatFact API, Official Joke API, Advice Slip API, Useless Facts API
+- 🔗 [GitHub](https://github.com/Souvikdas040/fun-fact-generator) | [Live Demo](https://fun-fact-generator-aa63.onrender.com)
+
+---
+
+### ☀️ 3. Weather App
+> **Stack:** React + TypeScript + OpenWeather API
+
+A beautiful weather app that displays current weather, 7-day forecast, and supports dark mode.
+
+- 🔧 **Tech:** React, TypeScript, TailwindCSS, Lucide Icons, Framer Motion, OpenWeather API, date-fns
+- 🔗 [GitHub](https://github.com/Souvikdas040/weather-app) | [Live Demo](https://weather-app-84mz.onrender.com)
+
+---
+
+## 🧠 Key Features
+
+- 🧩 Modular Project Cards
+- 🌐 External GitHub + Demo Links
+- 💅 Responsive Layout (Mobile, Tablet, Desktop)
+- 🌓 Light & Dark Mode Friendly
+- 💻 Clean & Maintainable Codebase
+
+---
+
+## 🏗️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/) (optional, for TS-based projects)
+
+---
+
+## 📁 Folder Structure
+```kotlin
+souvik-das-portfolio/
+├── public/
+│ └── preview.png
+├── src/
+│ ├── components/
+│ │ └── ProjectCard.tsx
+│ ├── pages/
+│ │ └── Projects.tsx
+│ └── App.tsx
+├── tailwind.config.js
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Installation
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+git clone https://github.com/Souvikdas040/portfolio-projects.git
+cd portfolio-projects
+npm install
 ```
+
+---
+
+## 🔧 Development
+
+```bash
+npm run dev
+```
+>View your site locally at: ```http://localhost:5173```

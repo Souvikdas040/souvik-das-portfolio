@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Food Delivery App",
-      image: "/public/project-img/food-delivery-app.png",
+      image: "/project-img/food-delivery-app.png",
       description:
         "Food Delivery App using MERN stack — streamlined, responsive, and modern.",
       tags: ["React", "Redux", "Node.js", "Express.js", "MongoDB Atlas", "JWT", "Stripe", "TailwindCSS"],
@@ -15,7 +15,7 @@ export default function Projects() {
     },
     {
       title: "Fun Fact Generator",
-      image: "/public/project-img/fun-fact-generator.png",
+      image: "/project-img/fun-fact-generator.png",
       description:
         "Quick Laughs, Feline Facts & More An interactive React app built to surprise and entertain with every refresh.",
       tags: ["Vite", "React", "TailwindCSS", "CatFact API", "Official Joke API", "Advice Slip API", "Useless Facts API"],
@@ -24,7 +24,7 @@ export default function Projects() {
     },
     {
       title: "Weather App",
-      image: "/public/project-img/weather-app.png",
+      image: "/project-img/weather-app.png",
       description:
         "A simple weather application fetching real-time weather data from OpenWeather API.",
       tags: ["React", "TypeScript", "TailwindCSS", "Lucide Icons", "Framer Motion", "OpenWeather API", "date-fns"],
