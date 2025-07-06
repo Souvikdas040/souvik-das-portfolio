@@ -15,16 +15,16 @@ export default function Contact() {
     setLoading(true);
 
     emailjs
-      .sendForm("service_gos3vmf", "template_z3ucczp", form.current as HTMLFormElement, "_56amATcv9mxWgeEI")
+      .sendForm(
+        "service_gos3vmf",
+        "template_z3ucczp",
+        form.current as HTMLFormElement,
+        "_56amATcv9mxWgeEI"
+      )
       .then(() => {
-        emailjs
-          .sendForm("service_gos3vmf", "template_hjwesar", form.current as HTMLFormElement, "_56amATcv9mxWgeEI")
-          .then(() => {
-            setLoading(false);
-            setDone(true);
-            (form.current as HTMLFormElement).reset();
-          })
-          .catch(() => setLoading(false));
+        setLoading(false);
+        setDone(true);
+        (form.current as HTMLFormElement).reset();
       })
       .catch(() => setLoading(false));
   };
@@ -39,16 +39,19 @@ export default function Contact() {
       transition={{ duration: 0.8 }}
     >
       <div className="relative z-10 w-full max-w-5xl bg-white/80 backdrop-blur-md shadow-2xl rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-10 border border-gray-200">
-
         {/* Left Section */}
         <div className="flex-1 space-y-6">
           <div>
-            <h1 className="text-4xl font-extrabold text-gray-800 mb-2">Contact Me</h1>
+            <h1 className="text-4xl font-extrabold text-gray-800 mb-2">
+              Contact Me
+            </h1>
             <p className="text-gray-600 text-lg">
-              Have a project in mind or just want to connect? Fill out the form and I’ll get back to you shortly.
+              Have a project in mind or just want to connect? Fill out the form
+              and I’ll get back to you shortly.
             </p>
             <p className="text-sm text-gray-500 mt-2">
-              I usually respond within 24 hours during weekdays. Feel free to include as many details as you'd like!
+              I usually respond within 24 hours during weekdays. Feel free to
+              include as many details as you'd like!
             </p>
           </div>
 
@@ -64,7 +67,12 @@ export default function Contact() {
             </div>
             <div className="flex items-center gap-2">
               <Linkedin className="w-4 h-4" />
-              <a href="https://www.linkedin.com/in/souvikdas040/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              <a
+                href="https://www.linkedin.com/in/souvikdas040/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
                 linkedin.com/in/souvikdas040/
               </a>
             </div>
@@ -85,7 +93,12 @@ export default function Contact() {
           className="flex-1 flex flex-col gap-4"
         >
           <Input name="user_name" placeholder="Your Name" required />
-          <Input name="user_email" type="email" placeholder="Your Email" required />
+          <Input
+            name="user_email"
+            type="email"
+            placeholder="Your Email"
+            required
+          />
           <Input name="subject" placeholder="Subject" />
           <textarea
             name="message"
@@ -95,7 +108,11 @@ export default function Contact() {
             required
           ></textarea>
 
-          <Button type="submit" className="mt-2 cursor-pointer" disabled={loading}>
+          <Button
+            type="submit"
+            className="mt-2 cursor-pointer"
+            disabled={loading}
+          >
             {loading ? "Sending..." : "Send Message"}
           </Button>
 
