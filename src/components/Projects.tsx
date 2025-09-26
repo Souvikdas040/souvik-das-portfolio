@@ -35,7 +35,7 @@ export default function Projects() {
       title: "GitHub Timeline App",
       image: "/project-img/github-timeline-app.png",
       description:
-        "This project is a simple PHP-based system that allows users to subscribe to and receive periodic email updates of the latest public events from the GitHub timeline. It includes a user-friendly web interface for registration and unsubscription, and a cron job to automate the process of fetching and sending updates.",
+        "A simple PHP-based system that lets users subscribe to GitHub timeline updates via email with verification, easy unsubscription, and automated cron-based delivery.",
       tags: ["PHP", "Shell Script", "Text File Storage", "Cron Job", "MailTrap Sandbox"],
       github: "https://github.com/Souvikdas040/github-timeline",
       live: "https://github-timeline-app.onrender.com/",
