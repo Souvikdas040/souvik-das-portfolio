@@ -51,13 +51,11 @@ export default function About() {
       glow: "rgba(38, 77, 228, 0.6)",
       name: "CSS",
     },
-
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       glow: "rgba(247, 223, 30, 0.6)",
       name: "JavaScript",
     },
-
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       glow: "rgba(97, 218, 251, 0.6)",

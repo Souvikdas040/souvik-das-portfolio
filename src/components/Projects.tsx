@@ -31,6 +31,15 @@ export default function Projects() {
       github: "https://github.com/Souvikdas040/weather-app",
       live: "https://weather-app-84mz.onrender.com",
     },
+    {
+      title: "GitHub Timeline App",
+      image: "/project-img/github-timeline-app.png",
+      description:
+        "This project is a simple PHP-based system that allows users to subscribe to and receive periodic email updates of the latest public events from the GitHub timeline. It includes a user-friendly web interface for registration and unsubscription, and a cron job to automate the process of fetching and sending updates.",
+      tags: ["PHP", "Shell Script", "Text File Storage", "Cron Job", "MailTrap Sandbox"],
+      github: "https://github.com/Souvikdas040/github-timeline",
+      live: "https://github-timeline-app.onrender.com/",
+    },
   ];
 
   return (
